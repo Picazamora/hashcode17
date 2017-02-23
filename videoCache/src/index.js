@@ -6,7 +6,7 @@ nameFile = process.argv[3];
 if(nameFile != null){
 	nameFile = process.env.NFILE;
 }else{
-	nameFile = 'examples/kittens.in'; //Javi
+	nameFile = 'examples/kittens.in'; //Name File
 }
 //const nameFile = require('nameFile');
 
@@ -15,6 +15,45 @@ var archivo = fs.readFileSync(nameFile, 'utf-8');
 var matrix = [];
 var conf = [];
 var matrixValue = [];
+
+
+	//Objects
+	var video = {
+				id:'',
+				size:''
+		}
+
+
+
+	var endpoint = {
+				id: '',
+				latencyServer: '',//1000ms
+				endPoint_cache:[] // lista de caches
+		}
+
+	var endpoint_cache = {
+				cacheServer:'',
+				latencyEndCache: ''
+		}
+
+	var cacheServer = {
+				Id:'', 
+				listVideo:[], //list Video
+				capacity:'',
+				latencyServer: ''
+		}
+
+	var request = {
+				nRequest: '', 
+				endpoint:'', //List of EndPoints
+				video:'' //list Video
+		}
+
+
+
+
+
+
 
 	//console.log(archivo.slice(0, c+2));
 	matrix = archivo.split("\n");

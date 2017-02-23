@@ -49,12 +49,6 @@ var matrixValue = [];
 				video:'' //list Video
 		}
 
-
-
-
-
-
-
 	//console.log(archivo.slice(0, c+2));
 	matrix = archivo.split("\n");
 

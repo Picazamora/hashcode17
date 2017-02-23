@@ -14,7 +14,7 @@ console.log('Inicio');
 var archivo = fs.readFileSync(nameFile, 'utf-8');
 var matrix = [];
 var conf = [];
-var matrixValue = [];
+
 
 
 	//Objects

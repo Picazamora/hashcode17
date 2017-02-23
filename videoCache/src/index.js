@@ -6,7 +6,7 @@ nameFile = process.argv[3];
 if(nameFile != null){
 	nameFile = process.env.NFILE;
 }else{
-	nameFile = 'example.in';
+	nameFile = 'examples/kittens.in';
 }
 //const nameFile = require('nameFile');
 

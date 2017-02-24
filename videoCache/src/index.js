@@ -148,6 +148,7 @@ function dameServersPosibles(request,video,sList,endpoint){
 		}
 	});
 
+<<<<<<< HEAD
 	return servidores;
 }
 
@@ -170,6 +171,10 @@ function removeLastVideo(server,video){
 	server.listVideo.remove(server.listVideo.length-1);
 	server.capacity += video.size;
 }
+=======
+	//console.log(archivo.slice(0, c+2));
+	matrix = archivo.split("\n");
+>>>>>>> origin/master
 
 function damePuntacion(request,endpoint,serverId){
 	return request.nRequest *(endpoint.latencyServer - endpoint.endPoint_cache[serverId]);
